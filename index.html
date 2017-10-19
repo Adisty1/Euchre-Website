@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>How to Play Euchre</title>
+<style>
+header, main, nav, footer, section, article, figure, figcaption, aside {display: block;}
+figcaption {width: 45%}
+#plain:hover {background-color: #000000; color: #ffffff;}
+</style>
+<meta charset="utf-8">
+<link href="euchre.css" rel="stylesheet">
+<link rel="icon" href="images/favicon.ico" type="image/xicon">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+</head>
+<header id="top">
+<h1>How to Play Euchre</h1>
+  <nav>
+    <li><a href="index.html">Home</a></li> &nbsp; 
+    <li><a href="history.html">History</a></li> &nbsp; 
+    <li><a href="glossary.html">Glossary</a></li> &nbsp; 
+	<li><a href="arules.html">Alternate Rules</a></li> &nbsp; 
+  </nav>
+</header>
+<main>
+<div>
+  <img src="images/cards1.jpg" width="20%" height="auto" alt="Hand of cards next to deck" id="left">
+  <img src="images/cards1.jpg" width="20%" height="auto" alt="Hand of cards next to deck" id="right">
+<br> 
+<b>Recommended age: </b>10+<br><br>
+<b>Number of Players: </b>4 (2 teams of 2, standard rules)
+<br>
+<br>
+<b>Object of the Game: </b>Be the first to score 10 points
+<br>
+<br>
+Images a bit much? Visit the plain text site by clicking <a id="plain" href="plaintext/plain_index.html">here</a> 
+<button type="button" onclick="document.getElementById('size').style.fontSize='200%'">Increase Font Size</button>
+</div>
+<br>
+<article id="size">
+<b>How to Play</b>
+<br>
+  <ol>
+	<li>Start off by removing cards with a value of 8 and under (2, 3, 4, 5, 6, 7, & 8) and the two Jokers from a standard 52 card deck.</li>
+	<li>Shuffle the remaining cards (there should be 24) and deal 5 cards to each player. These are dealt in groups of 2 and 3 cards.</li>
+	<li>After 5 cards have been dealt to each player, the next card is placed face up on the remaining cards (there should be 4). The stack of remaining cards is commonly referred to as the "kitty".</li>
+    <li>The suit of that card (heart <object id="r">&hearts;</object>, spade <object>&spades;</object>, diamond <object id="r">&diams;</object>, or club <object>&clubs;</object>) will be the candidate for trump. Starting on 
+	    the	dealer's left, each player has a chance to choose that card's suit as trump or pass.</li>
+    <li>If a player selects the card as trump, the dealer will pick up the card, remove a card from their hand, and place it in the kitty. Only the dealer will know which card was disposed of.</li> 
+	<li>If each player (including the dealer) chooses not to select the card suit for trump, the dealer will turn the card over on the pile. The players, in the same order, will have the chance to select any  
+	    other suit for trump. If the option is passed by all players (including the dealer), then the cards will be returned to the deck and player to the left will shuffle and deal the next hand.</li>
+	<li>The Jack of the trump suit is known as the right bower (bar), and is the highest valued card in the game. The Jack that has the same color as the trump suit is known as the left bower (bar), 
+	    and is the second highest valued card. Example: Hearts <object id="r">&hearts;</object> is trump, so the Jack of Hearts (J<object id="r">&hearts;</object>) is the right bower and the Jack of Diamonds 
+	    (J<object id="r">&diams;</object>) is the left bower.</li>
+  </ol>
+<b>Scoring</b>
+<br>
+  <ol>
+    <li>Scores are typically tracked using lower-ranking cards not used for play, usually the 6 and 4 (one team uses a red suit, the other uses a black suit).
+	<li>The player to the dealer's left will start the hand. They will place a card on the table, and the other players will select a card and place it in clock-wise order. Players must follow suit 
+		if they have the lead suit in their hand (i.e. if a heart <object id="r">&hearts;</object> is played first, then a player must select a heart <object id="r">&hearts;</object> if they have 
+		one in their hand). If the lead card is the trump suit, each player must place a card of the same suit, which includes the left bower. If the player has neither, then they can place any other card. Trump can be lead in 
+		the first round, though it is <em>not</em> recommended.</li> 
+	<li>The player that plays the highest valued card wins the trick (turn). The team that earns 3 or more tricks wins the hand.</li>
+	<li>The trump card values follow this order: right bower, left bower, Ace, King, Queen, 10, 9, and other card values follow the ranking: A, K, Q, J, 10, 9. A trump card will beat any non-trump card, 
+	regardless of play order.</li> 
+	<li>If the pair that selected the trump suit wins 3 tricks, that team will gain 1 point. If that pair wins all 5 tricks, they will receive 2 points.</li>
+	<li>If the pair that did not select trump wins 3 tricks, they will receive 2 points. This is called &quot;getting Euchered&quot;.</li>
+  </ol>
+<b>Special Scoring: Going Alone</b>
+<br>
+  <ol>
+    <li>When a player selects trump, they can declare that hey wish to &quot;go alone&quot;, meaning their partner is not allowed to play that hand in an attempt to earn 5 points.</li>
+	<li>Some players allow for &quot;Partner's Best&quot;, where the team that is going alone can trade 1 card from each other's hand while others do not. The preferred style of play should be established 
+	prior to the start of the game.</li>
+	<li>If the team that went alone can win all 5 tricks, that team earns 4 points. If only 3 or 4 tricks are won, the team only gets 1 point. If the opposing team scores 3 or more tricks, they will receive 
+	2 points.</li>
+  </ol> 
+<b>Score Examples</b><i><small>(blue rectangles represent won tricks)</small></i>
+<br>
+<br>
+<figure>
+  <img src="images/example-1.jpg" alt="Diagram showing Team B won 3 tricks" width="45%" height="auto" id="fig1"> 
+  <img src="images/example-2.jpg" alt="Diagram showing Player 4 from Team B won all 5 tricks" width="45%" height="auto" id="fig2">
+    <figcaption id="fig1"><i>Example 1</i></figcaption> <figcaption id="fig2"><i>Example 2</i></figcaption>
+ </figure>
+<section>
+ <ul>
+ <li>If Team A made trump in <em>Example 1</em>, Team B would gain 2 points for Euchering Team A.</li>
+ <li>If Team B made trump in <em>Example 1</em>, Team B would gain 1 point.</li>
+ <li>If either player from Team A made trump in <em>Example 2</em> and went alone, Team B would still only gain 2 points for Euchering Team A.</li>
+ <li>If Team B made trump in <em>Example 2</em> and Player 4 went alone, Team B would have scored 4 points.</li> 
+</ul>
+</section>
+</article>
+ <div id="footlink">
+  <ul>
+   <li><a href="index.html">Home</a></li> &nbsp;
+   <li><a href="history.html">History</a></li> &nbsp;
+   <li><a href="glossary.html">Glossary</a></li> &nbsp; 
+   <li><a href="arules.html">Alternate Rules</a></li> &nbsp;
+   <li><a href="index.html#top">Return to Top</a></li> 
+  </ul>
+ </div>
+<footer><small><i>Copyright &copy; Adam Bowling 2017</i> &nbsp; &nbsp; <a href="contact.html">Questions or Comments? Click Here!</a></small></footer>
+</main>
+</html>

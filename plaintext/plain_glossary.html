@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>How to Play Euchre</title>
+<style>
+header, main, nav, footer, section, article, figure, figcaption, aside {display: block;}
+html {font-size: 1.5em; margin: 1em;}
+dt {text-decoration: underline; font-weight: bold; padding: 5px;}
+#sublist {list-style-type: lower-alpha;}
+button {font-size: 1.5em;}
+button:hover {background-color: #000000; color: #ffffff;}
+a:hover {background-color: #000000; color: #ffffff;}
+footer {margin-bottom: 2em;}
+</style>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico" type="image/xicon">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+</head>
+<header id="top">
+<h1>Glossary</h1>
+ <nav>
+  <li><a href="plain_index.html">Home</a></li> &nbsp; 
+  <li><a href="plain_history.html">History</a></li> &nbsp; 
+  <li><a href="plain_glossary.html">Glossary</a></li> &nbsp; 
+  <li><a href="plain_arules.html">Alternate Rules</a></li> &nbsp;
+ </nav>
+</header>
+<main>
+<button type="button" onclick="document.getElementById('size').style.fontSize='200%'">Increase Font Size</button>
+<article id="size">
+<dl>
+ <dt>Hand</dt>
+  <dd>The result of dealing cards. Each hand consists of each player having 5 cards.</dd>
+ <dt>Deal</dt>
+  <dd>The act of one player shuffling the cards and distributing them to other players. These are passed out in combinations of two or three cards so that each player has 5 at the end of the deal.</dd>
+ <dt>Dealer</dt>
+  <dd>The player that dealt the current hand.</dd>
+ <dt>Kitty</dt>
+  <dd>The cards remaining after a deal (4 for the standard rules). The top card is turned over for trump selection.</dd>
+ <dt>Trump</dt>
+   <dd>The highest ranking suit as determined by player selection.</dd> 
+ <dt>&quot;Ordering Trump&quot;</dt>
+  <dd>The process of a player selecting either the turned up card as trump or selecting a suit if the card was turned down <small>(see &quot;turned down&quot; below)</small>.</dd>  
+ <dt>&quot;Picking Up Trump&quot;</dt>
+  <dd>If the turned up card is ordered up, the dealer of that round must take the turned up card and place one of the cards from their hand face down in the kitty.</dd>
+ <dt>&quot;Turned Down&quot;</dt>
+  <dd>If the turned up card is not selected as trump by any of the players (including the dealer) then the card will be turned over. Then each player in turn will have the opportunity to select another suit as trump.
+  <em>The suit of the turned down card cannot be selected as trump!</em></dd>
+ <dt>&quot;Going Hoyle&quot;</dt>
+  <dd>Selecting the opposite suit of the same color as the card that was turned down (i.e. selecting Clubs <object>&clubs;</object> if Spades <object>&spades;</object> was turned down, or selecting Diamonds 
+      <object id="r">&diams;</object> if Hearts <object id="r">&hearts;</object> was turned down, or vice versa).</dd>
+  <dt>Trick</dt>
+  <dd>One turn of players laying cards. Each trick consists of 4 cards.</dd>
+ <dt>&quot;Win the Trick&quot;</dt>
+  <dd>The player that plays the highest ranking card wins the trick. Three tricks must be won for a team to score points.</dd>
+ <dt>Lead</dt>
+  <dd>Playing the first card of the trick. At the beginning of the hand, the player to the left of the dealer has lead, so they play the first card. After that, the player that wins the trick has lead for the next round.</dd>
+ <dt>&quot;Following Suit&quot;</dt>
+  <dd>Playing the same suit as the lead card if a card of that suit is available.</dd>
+ <dt>Renege</dt>
+  <dd>Playing a card of a different suit than the lead card when it is available (i.e. playing a club when diamonds lead when a club is avaiable for play). Doing so results in the opposing team winning the hand and 
+  earning a point.</dd>
+ <dt>Bower (a.k.a. Bar)</dt>
+  <dd>The highest ranking trump cards as determined by suit. The Jack of the trump suit is the Right Bar (higest value) and the Jack with the matching color is the Left Bar (second highest value).</dd>
+ <dt>&quot;Pulling Trump&quot;</dt>
+  <dd>Purposely leading with a low value trump card in an effort to force another player (ideally from the opposing team) to essentially waste a high value trump card.</dd>
+ <dt>&quot;Two-Suited&quot;</dt>
+  <dd>Having a hand consisting of only two suits. This is an advantage if one of those suits are or will be trump, because a player has more opportunities to take the trick with trump.</dd>
+ <dt>&quot;Going Alone&quot;</dt>
+  <dd>When a player orders trump and thinks they can get all 5 tricks with just the cards in their hand. If successful in winning all 5, that team will earn 4 points. If only 3 or 4 are won, the team only earns 1 point.</dd>
+ <dt>Stopper</dt>
+  <dd>A card that prevents someone who went alone from winning all 5 tricks.</dd>
+ <dt>&quot;Getting Euchred&quot;</dt>
+  <dd>If the team that made trump doesn't win three or more tricks, they get Euchered. The opposing team then gains two points.</dd>
+ <dt>&quot;Partner's Best&quot;</dt>
+  <dd>A rule that allows a player that is going alone to trade one card from their hand for one from their partner's hand in an effort to better their chances of winning all 5 tricks. The allowance of this rule should
+  be determined prior to gameplay, because not all people allow this rule.</dd>
+ <dt>&quot;Throwing Off&quot;</dt>
+  <dd>When a player plays a card that has no chance of winning the trick. This may be due to a lack of a strong enough card to win, their partner has already won the trick, or because the player does not have a 
+  card matching the lead suit and opts to play a low value card.</dd>
+ <dt>&quot;Trumping Your Partner&quot;</dt>
+  <dd>Playing a card with a higher value than your partner's when your partner has already played a card that will win the trick. Sometimes this is unavoidable, rather than occuring as an oversight.</dd>  
+ <dt>Walk</dt>
+  <dd>When a trick is won with a low value lead card, such as a 9 or a 10, because no one trumped the card or lacked a higher value card of the lead suit.</dd>
+ <dt>&quot;Lay-down Hand&quot;</dt>
+  <dd>When a player has a hand that is impossible to beat and lays their cards down rather than playing out the hand. These hands could include:
+   <ol id="sublist">
+     <li>having the 5 highest ranking trump cards (both Bars, A, K, & Q)</li>
+	 <li>having 4 of the highest ranking trump cards (one of the Bars, A, K, Q, and an A of another suit) and knowing the missing Bar is in the kitty from being turned down (only applies to Hoyle)</li>
+	 <li>having both Bars, Q, 10, and 9 of the trump suit, because the remaining trump would be pulled by playing both Bars first</li>
+   </ol></dd>
+</dl>
+ <ul>
+  <li><a href="plain_index.html">Home</a></li> &nbsp; 
+  <li><a href="plain_history.html">History</a></li> &nbsp; 
+  <li><a href="plain_glossary.html">Glossary</a></li> &nbsp; 
+  <li><a href="plain_arules.html">Alternate Rules</a></li> &nbsp;
+  <li><a href="plain_glossary.html#top">Return to Top</a></li> 
+ </ul>
+<footer><i>Copyright &copy; Adam Bowling 2017</i> &nbsp; &nbsp; <a href="plain_contact.html">Questions or Comments? Click Here!</a></footer>
+</article>
+</main>
+</html>
